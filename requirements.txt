@@ -1,0 +1,6 @@
+wheel
+ffmpeg-python
+requests
+lxml
+wget
+youtube-dl
