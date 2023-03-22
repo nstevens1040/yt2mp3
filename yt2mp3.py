@@ -311,9 +311,7 @@ def _print_sig_code(func, example_sig):
             '    return %s\n') % (signature_id_tuple, expr_code)
     print('Extracted signature function:\n' + code)
 def _request_webpage(url_or_request, video_id, note=None, errnote=None, fatal=True, data=None, headers={}, query={}, expected_status=None):
-    if note is None:
-        report_download_webpage(video_id)
-    elif note is not False:
+    if note is not False:
         if video_id is None:
             print('%s' % (note,))
         else:
